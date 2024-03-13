@@ -1,0 +1,93 @@
+---
+
+---
+
+<header class="py-5 bg-white sticky top-0">
+  <div class="container md:flex px-6 md:items-center md:justify-between">
+    <div class="flex items-center justify-between">
+      <a href="#">
+        <span class="text-gray-900 text-3xl font-bold">Alernal</span>
+      </a>
+      <span
+        id="menu-icon"
+        class="block mx-2 text-3x1 bg-gray-100 p-2 rounded-lg md:hidden cursor-pointer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          class="h-6 w-6"
+          ><path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          ></path>
+        </svg>
+      </span>
+    </div>
+    <ul
+      class="p-5 z-10 absolute bg-white/80 backdrop-blur w-full left-0 py-4 opacity-0 top-[-400px] transition-all
+    ease-in duartion-900 md:p-0 md:flex md:items-center md:space-x-6 md:static md:w-auto md:opacity-100">
+      <li class="d:my-0 md:hover:animate-pop">
+        <a
+          href="#home"
+          class="font-medium duration-100 text-gray-900 hover:text-yellow-400"
+          >Home</a
+        >
+      </li>
+      <li class="my-6 md:my-0 md:hover:animate-pop">
+        <a
+          href="#"
+          class="font-medium duration-100 text-gray-900 hover:text-yellow-400"
+          >Services</a
+        >
+      </li>
+      <li class="my-6 md:my-0 md:hover:animate-pop">
+        <a
+          href="#"
+          class="font-medium duration-100 text-gray-900 hover:text-yellow-400"
+          >Pricing</a
+        >
+      </li>
+      <li class="my-6 md:my-0 md:hover:animate-pop">
+        <a
+          href="#"
+          class="font-medium duration-100 text-gray-900 hover:text-yellow-400"
+          >About Us</a
+        >
+      </li>
+      <li class="my-6 md:my-0 md:hover:animate-pop">
+        <a
+          href="#"
+          class="font-medium duration-100 text-gray-900 hover:text-yellow-400"
+          >Contact</a
+        >
+      </li>
+      <a href="#">
+        <button
+          type="button"
+          class="w-full md:hover:animate-pulse text-white bg-gray-900 font-medium rounded-lg px-3 py-2 text-center
+          hover:drop-shadow-md transition duration-300 ease-in-out"
+          >Get Started</button
+        >
+      </a>
+    </ul>
+  </div>
+</header>
+
+<script>
+  let list = document.querySelector("ul");
+  let isOpen = false;
+
+  function Menu() {
+    if (!isOpen) {
+      list.classList.add("top-[80px]");
+      list.classList.add("opacity-100");
+    } else {
+      list.classList.remove("top-[80px]");
+      list.classList.remove("opacity-100");
+    }
+    isOpen = !isOpen;
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let menuIcon = document.getElementById("menu-icon");
+    menuIcon.addEventListener("click", Menu);
+  });
+</script>
