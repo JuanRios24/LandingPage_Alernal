@@ -1,0 +1,157 @@
+---
+
+---
+
+<section id="contact" class="py-24 bg-gray-50">
+  <div
+    class="container flex flex-wrap items-center justify-between md:flex-row px-6 lg:mt-0 md:justify-center">
+    <div class="mb-14 lg:mb-0 lg:w-1/2 lg:pr-4">
+      <h1 class="text-[#1C3F60] sm:text-3xl font-bold mb-4 text-2xl">
+        Conéctate con nosotros:
+      </h1>
+      <p class="font-semibold mb-6 lg:max-w-xl sm:text-md text-sm">
+        ¡Descubre cómo nuestra empresa puede impulsar tu éxito empresarial! Esta
+        es tu oportunidad exclusiva para acceder a beneficios especiales al
+        conectarte con nosotros. Completa el formulario a continuación y déjanos
+        mostrarte cómo podemos ayudarte a alcanzar tus objetivos comerciales.
+      </p>
+      <ul class="ml-5 space-y-4 text-lg">
+        <li>
+          <i
+            class="fa-solid
+        fa-envelope-circle-check mr-2 p-3 text-white bg-[#1C3F60] rounded-full">
+          </i> contacto@alernal.com.co
+        </li>
+        <li>
+          <i
+            class="fa-solid fa-phone-volume mr-2 p-3 text-white bg-[#1C3F60] rounded-full"
+          ></i> +57 318 593 7994
+        </li>
+        <li>
+          <i
+            class="fa-brands fa-square-whatsapp mr-2 p-3 text-white bg-[#1C3F60] rounded-full"
+          ></i>
+          <a
+            href="https://api.whatsapp.com/send?phone=573185937994&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tu%20consultor%C3%ADa%20empresarial."
+            target="_blank"
+            class="hover:text-green-600">Chatear Ahora!</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="lg:w-1/2">
+      <form
+        class="flex items-center justify-center lg:pl-4"
+        action="./request_data.php"
+        method="POST">
+        <div class="bg-white rounded-2xl shadow-lg p-5">
+          <div class="mb-4">
+            <label class="block text-gray-700 font-semibold mb-2" for="nombre">
+              Nombre y Apellido *
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="nombre"
+              type="text"
+              placeholder="Ingresa tu nombre y apellido"
+              required
+              name="nombre"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-semibold mb-2" for="correo">
+              Correo Corporativo *
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="correo"
+              type="email"
+              placeholder="Ingresa tu correo"
+              required
+              name="correo"
+            />
+          </div>
+          <div class="mb-4 flex justify-between">
+            <div class="w-1/2 mr-2">
+              <label
+                class="block text-gray-700 font-semibold mb-2"
+                for="empresa">
+                Empresa
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="empresa"
+                type="text"
+                placeholder="Ingresa tu empresa"
+                name="empresa"
+              />
+            </div>
+            <div class="w-1/2 ml-2">
+              <label class="block text-gray-700 font-semibold mb-2" for="nit">
+                Nit
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="nit"
+                type="text"
+                placeholder="Ingresa tu Nit"
+                name="nit"
+              />
+            </div>
+          </div>
+          <div class="mb-4 flex justify-between">
+            <div class="w-1/2 mr-2">
+              <label
+                class="block text-gray-700 font-semibold mb-2"
+                for="ciudad">
+                Ciudad *
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="ciudad"
+                type="text"
+                placeholder="Ingresa tu ciudad"
+                required
+                name="ciudad"
+              />
+            </div>
+            <div class="w-1/2 ml-2">
+              <label
+                class="block text-gray-700 font-semibold mb-2"
+                for="telefono">
+                Teléfono *
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="telefono"
+                type="tel"
+                placeholder="Ingresa tu teléfono"
+                required
+                name="telefono"
+              />
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-semibold mb-2" for="asunto">
+              Asunto
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="asunto"
+              type="text"
+              placeholder="Ingresa un Asunto"
+              name="asunto"
+            />
+          </div>
+          <div class="flex items-center justify-start">
+            <button
+              class="bg-[#1C3F60] hover:animate-tada text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
